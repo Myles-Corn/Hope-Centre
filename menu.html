@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hope Centre</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <style>
+    :where([class^="ri-"])::before {content: "\f3c2";}
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+  <script>tailwind.config = { theme: { extend: { colors: { primary: '#663399', secondary: '#FF69B4', lavender: '#E6E6FA', lightPink: '#FFC0CB' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <header class="w-full bg-white border-b border-secondary border-opacity-30">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-primary font-medium hover:text-secondary transition-colors">Home</a>
+        <a href="about.html" class="text-primary font-medium hover:text-secondary transition-colors">About</a>
+        <a href="menu.html" class="text-primary font-medium hover:text-secondary transition-colors">Menu</a>
+      </nav>
+      <div class="text-3xl font-['Pacifico'] text-center mx-auto md:mx-0">
+        <span class="text-primary">The Hope</span><span class="text-secondary">Centre</span>
+      </div>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="volunteering.html" class="text-primary font-medium hover:text-secondary transition-colors">Volunteer</a>
+        <a href="events.html" class="text-primary font-medium hover:text-secondary transition-colors">Events</a>
+        <a href="contact.html" class="text-primary font-medium hover:text-secondary transition-colors">Contact</a>
+      </nav>
+      <div class="md:hidden flex items-center">
+        <button class="text-primary p-2 focus:outline-none w-10 h-10 flex items-center justify-center">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+<section id="menu" style="text-align: center; margin: 40px 0;">
+  <!-- Seasonal note -->
+       <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6">
+      Our Menu
+    </h1>
+    <p class="text-lg text-gray-700 mb-12">
+    Take a moment to unwind and explore our menu, filled with freshly brewed coffees and homemade classics.
+    </p>
+    <p class="text-lg text-gray-700 mb-12">
+      Whether you're here for a quick break or a leisurely catch up, you'll be made to feel very welcome. 
+    </p>
+  <!-- Menu button -->
+  <a href="files/2026_menu.pdf" target="_blank" rel="noopener noreferrer">
+    <button>Click here to view our full menu!</button>
+  </a>
+</section>
+
+
+
