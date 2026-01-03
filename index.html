@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hope Centre</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <style>
+    :where([class^="ri-"])::before {content: "\f3c2";}
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+  <script>tailwind.config = { theme: { extend: { colors: { primary: '#663399', secondary: '#FF69B4', lavender: '#E6E6FA', lightPink: '#FFC0CB' }, borderRadius: { 'none': '0px', 'sm': '4px', DEFAULT: '8px', 'md': '12px', 'lg': '16px', 'xl': '20px', '2xl': '24px', '3xl': '32px', 'full': '9999px', 'button': '8px' } } } }</script>
+</head>
+
+<body class="bg-white">
+  <!-- Header -->
+  <header class="w-full bg-white border-b border-secondary border-opacity-30">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="text-primary font-medium hover:text-secondary transition-colors">Home</a>
+        <a href="about.html" class="text-primary font-medium hover:text-secondary transition-colors">About</a>
+        <a href="menu.html" class="text-primary font-medium hover:text-secondary transition-colors">Menu</a>
+      </nav>
+        <div class="text-3xl font-['Pacifico'] text-center mx-auto md:mx-0">
+          <span class="text-primary">The Hope</span><span class="text-secondary">Centre</span>
+          <img src="circle_logo.jpg" alt="logo" class="inline-block align-middle h-8 ml-2">
+      </div>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="volunteering.html" class="text-primary font-medium hover:text-secondary transition-colors">Volunteer</a>
+        <a href="events.html" class="text-primary font-medium hover:text-secondary transition-colors">Events</a>
+        <a href="contact.html" class="text-primary font-medium hover:text-secondary transition-colors">Contact</a>
+      </nav>
+      <div class="md:hidden flex items-center">
+        <button class="text-primary p-2 focus:outline-none w-10 h-10 flex items-center justify-center">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 z-0"
+      style="background-image: url(images/outside.jpg) ;; background-size: contain; background-position: right; background-repeat: no-repeat;">
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white to-transparent"></div>
+    </div>
+    <div class="container mx-auto px-4 py-20 md:py-32 relative z-10">
+      <div class="w-full max-w-2xl">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">Where Community Meets Coffee</h1>
+        <p class="text-lg md:text-xl text-gray-700 mb-8">A warm and welcoming community hub and café on the high street, seeking to connect the community, combat isolation and loneliness, and promote health and wellbeing.</p>
+        <p class="text-lg md:text-xl text-gray-700 mb-8">We are a Christian charity putting faith into action by serving our community, with a vision to meet people at
+          their point of need. We provide support, connection, and hope to 'live life to the full'.</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="volunteering.html"
+            class="bg-secondary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap text-center">Become
+            a Volunteer</a>
+          <a href="events.html"
+            class="bg-white text-secondary border-2 border-secondary px-8 py-3 rounded-button font-medium hover:bg-secondary hover:bg-opacity-10 transition-colors whitespace-nowrap text-center">View our events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 md:py-24 bg-lavender">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">"The Well" Café</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto"></p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="rounded-lg overflow-hidden border-2 border-lightPink">
+          <img src="images/cafe.jpg" alt="Café">
+        </div>
+        <div class="flex flex-col justify-center">
+          <h3 class="text-2xl font-semibold text-primary mb-4">Are you hungry? Are you thirsty? Come to the well</h3>
+          <p class="text-gray-700 mb-4">"The Well" Café is more than just a place to enjoy a coffee, it's a friendly hub to catch up with friends and feel welcome.</p>
+          <p class="text-gray-700 mb-4">Come in for the free Wi-Fi, enjoy conversations with others, or find a spot to stay a while and recharge. </p>
+          <p class="text-gray-700 mb-4">Take a moment to explore our gifts and cards that are perfect for any occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Garden Section -->
+  <section id="garden" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">The Garden of Hope</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">
+          Visual art installations merge with fragrant herbs and textured plants
+        </p>
+      </div>
+           <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="rounded-lg overflow-hidden border-2 border-lightPink shadow-md">
+          <img src="images/garden.jpg" alt="Garden">
+        </div>
+        <div>
+                <h3 class="text-2xl font-semibold text-primary mb-4">Harmony in Nature</h3>
+          <p class="text-gray-700 mb-4">
+            This garden isn't just about plants, it's about creating a space where everyone feels welcome, calm, and
+            connected.
+          </p>
+          <p class="text-gray-700 mb-4">
+            A sensory garden is more than just a space, it's a place of peace, connection, and healing.
+          </p>
+          <p class="text-gray-700 mb-4">------</p>
+          <p class="text-gray-700 text-lg font-medium text-secondary mt-2">
+            Come and grow with us, in more ways than one.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Upper Room Section -->
+  <section id="Upper_Room" class="py-16 md:py-24 bg-pink-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">The Upper Room</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">If you're looking for a space for meetings, workshops, or small events, our Upper Room could be the perfect place.</p>
+      </div>
+      <div class="grid grod-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="rounded-lg overflow-hidden border-2 border-lightPink shadow-md">
+          <img src="images/upper_room.jpg" alt="upper_room">
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-primary mb-4">A Community Space for Hire</h3>
+            <p class="text-gray-700 mb-4">
+              This bright and spacious room is ideal for groups, classes, or small community events, with food and drink facilities available, or the option to order from "The Well" Café downstairs!
+            </p>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Section -->
+  <section id="volunteer" class="py-16 md:py-24 bg-lavender">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Join Our Volunteer Team</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto mb-4">Looking to make a difference? Start right here at The Hope
+          Centre!</p>
+        <p class="text-gray-700 max-w-3xl mx-auto mb-4">The Hope Centre is more than just a place, it's a community of
+          people coming together to support, uplift, and grow with one another.</p>
+        <p class="text-gray-700 max-w-3xl mx-auto mb-4">Whether it's making barista style coffee, supporting wellbeing
+          programmes, or offering a friendly face to someone in need, your time can make a real impact.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 rounded-full bg-secondary bg-opacity-20 flex items-center justify-center mb-4">
+            <i class="ri-user-heart-line ri-lg text-secondary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Café Operations</h3>
+          <p class="text-gray-700 mb-4">Our community café, The Well, is a friendly and relaxed space where people can
+            connect, recharge, and feel at home.</p>
+          <div class="text-gray-700 mb-4">Whether you're serving coffee and cake, or offering a kind smile, your time
+            helps create a space full of hope, dignity, and belonging.</div>
+          <ul class="text-gray-700 mb-4">
+            <li class="flex items-start mb-2">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Preparing and serving drinks / snacks</span>
+            <li class="flex items-start mb-2">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Light cleaning and tidying</span>
+            <li class="flex items-start mb-2">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Supporting events and activities</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-primary rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mb-4">
+            <i class="ri-restaurant-line ri-lg text-primary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Kitchen Team</h3>
+          <p class="text-white mb-4">Do you enjoy preparing food that brings people together?</p>
+          <div class="text-white mb-4">Whether it's helping with prep, cooking, or cleanup, every role in the kitchen
+            helps nourish both body and spirit.</div>
+          <ul class="text-white mb-4">
+            <li class="flex items-start mb-2">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Training and support provided</span>
+            </li>
+            <li class="flex items-start mb-2">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Learn from experienced volunteers</span>
+            </li>
+            <li class="flex items-start">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Develop valuable skills</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+          <div class="w-12 h-12 rounded-full bg-secondary bg-opacity-20 flex items-center justify-center mb-4">
+            <i class="ri-calendar-event-line ri-lg text-secondary"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-primary mb-3">Events & Programs</h3>
+          <p class="text-gray-700 mb-4">Our events aren't just about activities - they're about people, and many of our
+            sessions are lead by volunteers who bring their talents, time, and care to make it all happen.</p>
+          <div class="text-gray-700-mb-4">From singalongs to craft sessions, you can help to create spaces where
+            everyone feels welcome.</div>
+          <ul class="text-gray-700 mb-4">
+            <li class="flex items-start mb-2">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Project-based commitments</span>
+            </li>
+            <li class="flex items-start mb-2">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Great for building event planning skills</span>
+            </li>
+            <li class="flex items-start">
+              <i class="ri-checkbox-circle-line text-secondary mr-2 mt-1"></i>
+              <span>Make a direct community impact</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <a href="#"
+          class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-colors whitespace-nowrap inline-block">Apply
+          to Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Preview -->
+  <section id="menu" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Menu Highlights</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">Warm drinks. Good food. Great company.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="border-2 border-lightPink rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+          <img src="images/specialty_coffee.jpg" alt="Specialty_Coffee">
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="text-xl font-semibold text-primary">Specialty Coffee</h3>
+              <span class="bg-secondary text-white text-sm px-3 py-1 rounded-full">From £2.20</span>
+            </div>
+            <p class="text-gray-700 mb-3">Great coffee, made by people who care. Every cup supports our community café.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-lavender text-primary text-xs px-3 py-1 rounded-full">Dairy-Free Options</span>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 border-lightPink rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+          <img src="/images/sweet_treats.jpg" alt="Sweet_Treats">
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="text-xl font-semibold text-primary">Sweet Treats</h3>
+              <span class="bg-secondary text-white text-sm px-3 py-1 rounded-full">From £2.40</span>
+            </div>
+            <p class="text-gray-700 mb-3">Fancy something sweet? We have just the thing.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-lavender text-primary text-xs px-3 py-1 rounded-full">Homemade</span>
+              <span class="bg-lavender text-primary text-xs px-3 py-1 rounded-full">Gluten-free options</span>
+            </div>
+          </div>
+        </div>
+        <div class="border-2 border-lightPink rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+          <img
+            src="images/breakfast_brunch_and_lunch.jpg" alt="Lunches">
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="text-xl font-semibold text-primary">Breakfast, Brunch, and Lunch</h3>
+              <span class="bg-secondary text-white text-sm px-3 py-1 rounded-full">From £4.50</span>
+            </div>
+            <p class="text-gray-700 mb-3">Our menu ranges from full breakfasts and teacakes to toasties and jacket potatoes.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-lavender text-primary text-xs px-3 py-1 rounded-full">Seasonal</span>
+              <span class="bg-lavender text-primary text-xs px-3 py-1 rounded-full">Glutem-free options</span>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 text-center">
+        <a href="#"
+          class="bg-white text-primary border-2 border-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:bg-opacity-10 transition-colors whitespace-nowrap inline-block">View
+          Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Impact -->
+  <section class="py-16 md:py-24 bg-pink-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Community Impact</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto">Every cup of coffee and meal purchased helps support our community
+          programs and initiatives.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-2xl font-semibold text-primary mb-6">What Our Community Says</h3>
+          <div class="mb-8">
+            <div class="text-secondary text-4xl mb-2">"</div>
+            <p class="text-gray-700 mb-4">Called in for a sandwich at lunch time. Fantastic, tasty fried halloumi and
+              sweet chilli with salad. Freshly made and served with a smile. Friendly staff and very reasonable prices.
+            </p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">
+                Reg</div>
+              <div>
+                <p class="text-gray-600 text-sm">Local Resident</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="text-secondary text-4xl mb-2">"</div>
+            <p class="text-gray-700 mb-4">Volunteering at The Hope Centre is fun! Everyone is so friendly, and I have learned so much. I'm more confident, and really pleased I came here.</p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">
+                B</div>
+              <div>
+                <p class="text-gray-600 text-sm">Volunteer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-2xl font-semibold text-primary mb-6">Our Initiatives</h3>
+          <div class="text-left">
+            <p class="text-gray-700 mb-4">We will soon be running numerous community events beginning with our "Music Café for people living with dementia" on 16th September.</p>
+            <p class="text-gray-700 mb-4">Make sure to visit us to stay up to date with all activities we will be running in the near future!</p>
+          </div>
+          <div class="bg-lavender rounded-lg p-5">
+            <h4 class="font-semibold text-primary mb-3">Stay Updated with Our Newsletter</h4>
+            <p class="text-gray-700 mb-4">We will soon be delivering a monthly newsletter outlining all events that will be taking place. The below "Subscribe" button is not currently live, but we thank you for your patience and we will let you know when it is operational.</p>
+            <form class="flex flex-col sm:flex-row gap-3">
+              <input type="email" placeholder="Your email address"
+                class="flex-1 px-4 py-2 rounded-button border-none focus:ring-2 focus:ring-secondary text-sm">
+              <button type="submit"
+                class="bg-primary text-white px-6 py-2 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <div class="text-2xl font-['Pacifico'] mb-4">
+            <span class="text-white">The Hope</span><span class="text-secondary">Centre</span>
+          </div>
+          <p class="text-white text-opacity-80 mb-4">A community hub combining "The Well" Café, "The Garden of Hope", and "The Upper Room" to offer food, drink, and activities all year round!</p>
+          <div class="flex space-x-4">
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-colors">
+              <i class="ri-facebook-fill ri-lg text-white"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-colors">
+              <i class="ri-instagram-line ri-lg text-white"></i>
+            </a>
+            <a href="#"
+              class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-colors">
+              <i class="ri-twitter-x-line ri-lg text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Visit Us</h4>
+          <address class="not-italic text-white text-opacity-80">
+            <p class="mb-2">16-18 Park Green</p>
+            <p class="mb-2">Macclesfield, SK11 7NA</p>
+            <p class="flex items-center mb-2">
+              <i class="ri-phone-line mr-2"></i>
+              <span>01625 404384</span>
+            </p>
+            <p class="flex items-center">
+              <i class="ri-mail-line mr-2"></i>
+              <span>managerhopecentremacclesfield@gmail.com</span>
+            </p>
+          </address>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Café Opening Hours</h4>
+          <ul class="text-white text-opacity-80">
+            <li class="flex justify-between mb-2">
+              <span>Tuesday / Saturday</span>
+              <span>10:00 AM - 2:00 PM</span>
+            </li>
+            <li class="flex justify-between mb-2">
+              <span>Wednesday - Friday</span>
+              <span>10:00 AM - 3:30 PM</span>
+            </li>
+            <li class="flex justify-between mb-2 text-secondary">
+              <span>Sunday / Monday</span>
+              <span>Closed</span>
+            </li>
+            <li class="mt-4 text-secondary">
+            </li>
+          </ul>
+          </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+          <p class="text-white text-opacity-80 mb-4">Subscribe to receive updates on events, volunteer opportunities,
+            and special promotions.</p>
+          <form class="flex flex-col gap-3">
+            <input type="email" placeholder="Your email address"
+              class="px-4 py-2 rounded-button border-none bg-white bg-opacity-20 text-white placeholder-white placeholder-opacity-60 focus:bg-opacity-30 focus:outline-none text-sm">
+            <button type="submit"
+              class="bg-secondary text-white px-4 py-2 rounded-button hover:bg-opacity-90 transition-colors whitespace-nowrap">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="border-t border-white border-opacity-20 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-white text-opacity-60 text-sm mb-4 md:mb-0">© 2025 The Hope Centre. All rights reserved.</p>
+        <div class="flex flex-wrap gap-4 text-sm">
+          <a href="#" class="text-white text-opacity-60 hover:text-secondary transition-colors">Privacy Policy</a>
+          <a href="#" class="text-white text-opacity-60 hover:text-secondary transition-colors">Terms of Service</a>
+          <a href="#" class="text-white text-opacity-60 hover:text-secondary transition-colors">Volunteer Policy</a>
+          <a href="#" class="text-white text-opacity-60 hover:text-secondary transition-colors">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script id="mobileMenu">
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuButton = document.querySelector('.ri-menu-line').parentElement;
+      const mobileMenu = document.createElement('div');
+      mobileMenu.className = 'fixed inset-0 bg-primary bg-opacity-95 z-50 flex flex-col items-center justify-center transform transition-transform duration-300 translate-x-full';
+      mobileMenu.innerHTML = `
+<button class="absolute top-4 right-4 text-white p-2 focus:outline-none w-10 h-10 flex items-center justify-center">
+<i class="ri-close-line ri-lg"></i>
+</button>
+<nav class="flex flex-col items-center space-y-6 text-xl">
+<a href="#" class="text-white font-medium hover:text-secondary transition-colors">Home</a>
+<a href="#about" class="text-white font-medium hover:text-secondary transition-colors">About</a>
+<a href="#menu" class="text-white font-medium hover:text-secondary transition-colors">Menu</a>
+<a href="#volunteer" class="text-white font-medium hover:text-secondary transition-colors">Volunteer</a>
+<a href="#" class="text-white font-medium hover:text-secondary transition-colors">Events</a>
+<a href="#" class="text-white font-medium hover:text-secondary transition-colors">Contact</a>
+</nav>
+`;
+      document.body.appendChild(mobileMenu);
+      menuButton.addEventListener('click', function () {
+        mobileMenu.classList.remove('translate-x-full');
+        document.body.classList.add('overflow-hidden');
+      });
+      const closeButton = mobileMenu.querySelector('.ri-close-line').parentElement;
+      closeButton.addEventListener('click', function () {
+        mobileMenu.classList.add('translate-x-full');
+        document.body.classList.remove('overflow-hidden');
+      });
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          mobileMenu.classList.add('translate-x-full');
+          document.body.classList.remove('overflow-hidden');
+        });
+      });
+    });
+  </script>
+  <script id="smoothScroll">
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a[href^="#"]');
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href !== '#') {
+            e.preventDefault();
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
